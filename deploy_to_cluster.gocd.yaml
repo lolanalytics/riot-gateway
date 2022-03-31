@@ -15,7 +15,7 @@ pipelines:
         git: https://github.com/lolanalytics/riot-gateway.git
         shallow_clone: false
         auto_update: true
-        branch: master
+        branch: main
         name: SourceCodeRepo
     stages:
       - deploy_to_cluster:
