@@ -35,6 +35,6 @@ pipelines:
                 - exec:
                     arguments:
                       - -c
-                      - docker build -t $DOCKERHUB_USERNAME/riot-gateway:$GO_PIPELINE_LABEL . -f Dockerfile
+                      - docker build -t $DOCKERHUB_USERNAME/riot-gateway:$GO_PIPELINE_LABEL .
                     command: /bin/bash
                     run_if: passed
