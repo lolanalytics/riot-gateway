@@ -1,5 +1,5 @@
 Image:
-  repository: localhost:5000
+  repository: viktormsumup
   name: riot-gateway
   tag: latest
   pullPolicy: Always
