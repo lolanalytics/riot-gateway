@@ -1,0 +1,28 @@
+Image:
+  repository: localhost:5000
+  name: riot-gateway
+  tag: latest
+  pullPolicy: Always
+
+namespace: default
+name: riot-gateway
+port: 8080
+
+podAnnotations: {}
+resources: {}
+
+replicas: 1
+
+livenessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 30
+  timeoutSeconds: 5
+  failureThreshold: 10
+  successThreshold: 1
+
+readinessProbe:
+  initialDelaySeconds: 10
+  periodSeconds: 10
+  timeoutSeconds: 5
+  failureThreshold: 10
+  successThreshold: 1
